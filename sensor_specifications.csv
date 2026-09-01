@@ -1,0 +1,7 @@
+Sensor,Parameter,Range,Resolution,Accuracy,Interface,Operating Voltage,Notes
+PMS7003,PM1.0 (Particulate Matter),0–500 µg/m³,1 µg/m³,"±10 µg/m³ (0–100), ±10% (100–500)",UART (9600 baud),5V,"Laser scattering; environmental & standard modes"
+PMS7003,PM2.5 (Particulate Matter),0–500 µg/m³,1 µg/m³,"±10 µg/m³ (0–100), ±10% (100–500)",UART (9600 baud),5V,Main air quality metric; used for fan auto-control
+PMS7003,PM10 (Particulate Matter),0–500 µg/m³,1 µg/m³,"±10 µg/m³ (0–100), ±10% (100–500)",UART (9600 baud),5V,Coarse dust particles
+DHT22 (AM2302),Temperature,-40°C to +80°C,0.1°C,±0.5°C,Single-wire digital (GPIO D4),3.3V – 5V,"Sampling interval ≥2s; NaN check in firmware"
+DHT22 (AM2302),Relative Humidity,0% – 100% RH,0.1% RH,±2–5% RH,Single-wire digital (GPIO D4),3.3V – 5V,Best accuracy: 0–80% RH range
+"Touch/Analog Input (A0)",Analog Voltage / Touch,0–1.0V (ESP8266 ADC),10-bit (0–1023),±1 LSB typical,Analog (GPIO A0),0–1.0V max,Used as capacitive touch for OLED page cycling & factory reset
